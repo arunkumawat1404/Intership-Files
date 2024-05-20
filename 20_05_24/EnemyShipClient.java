@@ -1,13 +1,34 @@
 
 //Product 
 abstract class EnemyShip{
-    String name;
-    double amtDamage;
-    public abstract void followHeroShip();
-    public abstract void displayEnemyShip();
-    public abstract void enemyShipShoots();
-    public abstract void setDamage(double amtDamage);
-    public abstract double getDamage();
+    private String name;
+    private double amtDamage;
+    public void setName(String name){
+        this.name=name;
+    }
+    public String getName(){
+        return name;
+    }
+    
+    public  void setDamage(double amtDamage){
+        this.amtDamage=amtDamage;
+    }
+    public  double getDamage(){
+        return amtDamage;
+    }
+    public void followHeroShip(){
+        System.out.println(getName() + " Follows hero ship");
+
+    }
+    public  void displayEnemyShip(){
+        System.out.println(getName() + " On the screen");
+
+    }   
+     public void enemyShipShoots(){
+        System.out.println(getName() + " Shoots and done the damage " + getDamage());
+
+    }
+    public abstract void testEnemyShip();
 
 }
 
