@@ -29,7 +29,7 @@ class BankTranaction extends Bank{
        
     }
 
-   @override  
+   @Override  
     public void deposit(double amount){
         
 
@@ -38,7 +38,7 @@ class BankTranaction extends Bank{
 
 
     }
-    @overide 
+    @Override 
     public void withdraw( double amount){
         double w=getBalance();
         w -=amount;
