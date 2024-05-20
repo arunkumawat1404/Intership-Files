@@ -68,5 +68,5 @@ class UFOEnemyShip extends EnemyShip{
 //Factory 
 
 class EnemyShipFactory{
-    public EnemyShip makEnemyShip(St)
+    public EnemyShip makEnemyShip(){}
 }
