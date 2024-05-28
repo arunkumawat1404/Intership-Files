@@ -27,7 +27,7 @@ class FactoryFood{
         if(order.equalsIgnoreCase("Cake")){
             return new Cake();
         }
-        else if(order.equalsIgnoreCase("Piza")){
+        else if(order.equalsIgnoreCase("Pizza")){
             return new Pizza();
         }
         else

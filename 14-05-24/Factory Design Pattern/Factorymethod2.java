@@ -4,7 +4,7 @@ import java.util.*;
 
 interface Shape{
 
-    void getArea();
+    public void getArea();
 }
 class Circle implements Shape {
 

@@ -43,9 +43,9 @@ import java.io.File;
 }
 public class SingletonExample {
     public static void main(String[] args) {
-       // Logger log1 = Logger.getInstance();
+       Logger log1 = Logger.getInstance();
        Logger log2 = Logger.getInstance();
-        //log1.logs("This is my first log in the file");
+    log1.logs("This is my first log in the file");
     log2.logs("This is my second log in the file");
 
        /* if(log1==log2){
