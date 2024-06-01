@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Client3",
+            "request": "launch",
+            "mainClass": "Client3",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Server3",
+            "request": "launch",
+            "mainClass": "Server3",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-GetmethodApplication<getmethod>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.aruncodes.getmethod.GetmethodApplication",
+            "projectName": "getmethod",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=50134 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=getmethod"
+        }
+    ]
+}
