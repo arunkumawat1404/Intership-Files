@@ -7,13 +7,13 @@
 </head>
 <body>
     <div class="calculator" style="align-items: center;">
-        <form action="@{/calculator}" method="post">
+        <form th:action="@{/calculator}" method="post" th:object ="${calculate}">
             <label for="num1">Enter num 1</label><br>
-            <input id="num1" field ="*{num1}"><br>
+            <input id="num1" th:field ="*{num1}"><br>
             <label for="num2"> Enter num2</label><br>
-            <input id="num2" field ="*{num2}"><br>
+            <input id="num2" th:field ="*{num2}"><br>
             <label for="cars">Choose Operation</label><br>
-            <select name="operation" id="operation">
+            <select name="operation" id="operation" th:field="*{operation}">
               <option value="add">Add</option>
               <option value="subtract">Subtract</option>
               <option value="multiply">Multiply</option>
@@ -27,7 +27,7 @@
         </form>
     </div>
     <div>
-        h1
+        <h1 th:if="${result != null}" th:text="'Result: ' + ${result}"></h1>
     </div>
 </body>
 </html>

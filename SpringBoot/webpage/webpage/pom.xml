@@ -8,16 +8,16 @@
 		<version>3.3.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.calculator</groupId>
-	<artifactId>simplecalculator</artifactId>
+	<groupId>com.form</groupId>
+	<artifactId>webpage</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>simplecalculator</name>
+	<name>webpage</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>22</java.version>
 	</properties>
 	<dependencies>
-	<dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>

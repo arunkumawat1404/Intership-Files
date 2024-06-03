@@ -4,6 +4,7 @@ public class Calculator {
 
     private double num1;
     private double num2;
+    private String operation;
     public double getNum1() {
         return num1;
     }
@@ -15,6 +16,12 @@ public class Calculator {
     }
     public void setNum2(double num2) {
         this.num2 = num2;
+    }
+    public String getOperation() {
+        return operation;
+    }
+    public void setOperation(String operation) {
+        this.operation = operation;
     }
     
 

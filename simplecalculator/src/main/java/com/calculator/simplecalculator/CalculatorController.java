@@ -28,13 +28,19 @@ public class CalculatorController {
     
     @PostMapping
     public String returnresult(@ModelAttribute("calculate") Calculator calc , Model model) {
-        double add = calc.getNum1() + calc.getNum2();
-        double subtract = calc.getNum1()  - calc.getNum2();
-        double multiply = calc.getNum1()*calc.getNum2();
-       // double subtract = calc.getNum1() + calc.getNum2();
-        model.addAttribute("add" , add);
-        model.addAttribute("subtract" , subtract);
-        model.addAttribute("multiply" , multiply);
+        double result = 0;
+        switch (calc.getOperation()) {
+            case "add":
+                result = calc.getNum1() + calc.getNum2();
+                break;
+            case "subtract":
+                result = calc.getNum1() - calc.getNum2();
+                break;
+            case "multiply":
+                result = calc.getNum1() * calc.getNum2();
+                break;
+        }
+        model.addAttribute("result", result);
 
         
         return "calculator";
