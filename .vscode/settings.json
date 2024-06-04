@@ -1,4 +1,7 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.maven.globalSettings": "C:\\Users\\kknit\\Desktop\\Learning\\.vscode",
+    "java.maven.downloadSources": true,
+    "java.configuration.maven.userSettings": "C:\\Users\\kknit\\Desktop\\Learning\\.vscode"
 }

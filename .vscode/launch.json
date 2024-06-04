@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "WebpageApplication",
+            "request": "launch",
+            "mainClass": "com.form.webpage.WebpageApplication",
+            "projectName": "webpage"
+        },
+        {
+            "type": "java",
             "name": "Client3",
             "request": "launch",
             "mainClass": "Client3",
