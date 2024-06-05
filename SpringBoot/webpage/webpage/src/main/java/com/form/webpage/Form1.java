@@ -1,6 +1,6 @@
 package com.form.webpage;
 
-public class Form {
+public class Form1 {
     private String name;
     private String email;
     private int phone;

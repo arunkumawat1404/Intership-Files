@@ -2,6 +2,7 @@ package com.form.webpage;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 
 
-@RestController
+@Controller
 @RequestMapping("/api")
 public class FormController {
 
@@ -33,7 +34,7 @@ public class FormController {
         model.addAttribute("phone" , phone);
 
         
-        return "redirect:/userDetails";
+        return "userDetails";
     }
     @GetMapping("/userDetails")
     public String getMethod() {
